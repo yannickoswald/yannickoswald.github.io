@@ -1,65 +1,36 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+.container {
     text-align: center;
 }
 
-.papers-container {
-    width: 80%;
-    max-width: 1200px; /* Increased max-width */
-    margin: 0 auto;
+.box {
+    background-color: white;
+    border: 2px solid #333; /* Dark border for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px 0; /* Spacing between boxes */
+    width: 300px; /* Fixed width */
 }
 
-h1 {
-    font-size: 2em;
-    color: #333;
-    margin-top: 30px;
+.box a {
+    color: black; /* Black text color */
+    font-weight: bold; /* Bold font */
+    text-decoration: none; /* No underline */
 }
 
-.paper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 15px; 
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #ffffff; /* White background */
-    width: 70%; /* Increased width */
-    max-width: 700px; /* Increased max-width */
-    height: auto; /* Height auto to accommodate content */
-    overflow: hidden; /* Hide overflow */
+/* Custom styles for individual boxes */
+#ecological-economics {
+    /* Custom styles if needed */
 }
 
-.paper img {
-    width: 100%; /* Full width of the box */
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.paper a {
-    text-decoration: none;
-    color: #0066cc;
-    width: 100%; /* Ensure link takes full width */
-}
-
-.paper-info {
-    text-align: left;
-    width: 100%; /* Full width */
-}
-
-.paper-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: black;
-    margin: 0; /* Reset margin */
-}
-
-.paper-details {
-    font-size: 0.9em;
-    color: #555;
-    margin: 0; /* Reset margin */
+#computational-social-science {
+    /* Custom styles if needed */
 }
