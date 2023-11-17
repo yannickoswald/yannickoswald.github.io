@@ -1,13 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 
 .profile-pic {
@@ -17,19 +21,35 @@ body {
     margin-top: 20px;
 }
 
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
 .navigation ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navigation ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 5px;
 }
 
 .navigation a {
+    display: block;
     text-decoration: none;
     color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #e0e0e0;
 }
 
 .social-media img {
@@ -46,8 +66,27 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .cv-download:hover {
     background-color: #45a049;
+}
+
+.description-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.description-box p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
 }
