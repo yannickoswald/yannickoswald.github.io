@@ -22,6 +22,13 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin: 0;
+    color: black;
+}
+
+
+.talk-title a {
+    color: black; /* Set link color to black */
+    text-decoration: underline; /* Adds underline to the link */
 }
 
 .talk-details {
