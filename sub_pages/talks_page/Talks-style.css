@@ -26,11 +26,6 @@ body {
 }
 
 
-.talk-title a {
-    color: black; /* Set link color to black */
-    text-decoration: underline; /* Adds underline to the link */
-}
-
 .talk-details {
     font-size: 14px;
     margin: 5px 0 0;
