@@ -25,6 +25,7 @@ body {
     color: black; /* Black text color */
     font-weight: bold; /* Bold font */
     text-decoration: none; /* No underline */
+    font-size: x-large;
 }
 
 /* Custom styles for individual boxes */
