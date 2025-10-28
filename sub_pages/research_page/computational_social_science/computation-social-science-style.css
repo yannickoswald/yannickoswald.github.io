@@ -10,22 +10,25 @@ h1 {
   font-size: 2em;
   color: #333;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .papers-container {
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 850px; /* narrower page layout */
   margin: 0 auto 60px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  align-items: center;
+  gap: 30px;
 }
 
 .paper {
+  width: 80%; /* narrower card width */
+  max-width: 600px; /* limit box width */
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -33,14 +36,16 @@ h1 {
 
 .paper:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .paper img {
   width: 100%;
-  max-height: 220px; /* smaller but still visually clear */
-  object-fit: cover;
+  max-height: 160px; /* smaller but still clear */
+  object-fit: contain; /* show entire image */
+  background-color: #f9f9f9; /* subtle frame color */
   display: block;
+  padding: 5px;
 }
 
 .paper-info {
@@ -48,7 +53,7 @@ h1 {
 }
 
 .paper-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
   color: #111;
   margin: 0 0 8px;
@@ -67,12 +72,12 @@ h1 {
 
 .btn {
   display: inline-block;
-  padding: 8px 14px;
+  padding: 7px 12px;
   border-radius: 6px;
   background-color: #007acc;
   color: #fff;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.85em;
   transition: background-color 0.2s ease;
 }
 
