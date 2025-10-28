@@ -75,14 +75,15 @@ h1 {
 
 .description-box {
     margin-top: 20px;
-    padding: 15px;
+    padding: 25px;                /* more breathing room inside */
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: justify;          /* neat block alignment */
+    line-height: 1.6;             /* better readability */
 }
 
 .description-box p {
